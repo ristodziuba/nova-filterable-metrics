@@ -38,11 +38,11 @@ export default {
   }),
 
   methods: {
-    handleChange(key) {
-      if (typeof key !== "object") {
-        this.selectedRangeKey = key;
+    handleChange(payload) {
+      if (typeof payload !== "object") {
+        this.selectedRangeKey = payload;
       } else {
-        this.selectedFilters[payload.filter.class] = key.selected;
+        this.selectedFilters[payload.filter.class] = payload.selected;
       }
     },
 
