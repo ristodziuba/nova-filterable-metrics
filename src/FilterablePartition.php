@@ -1,6 +1,6 @@
 <?php
 
-namespace Nemrutco\Filterable;
+namespace Ristodziuba\Filterable;
 
 trait FilterablePartition
 {

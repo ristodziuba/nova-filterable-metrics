@@ -11,7 +11,7 @@ Add custom filters to your Laravel Nova metrics.
 You can install the package in to a Laravel app that uses [Nova](https://nova.laravel.com) via composer:
 
 ```bash
-composer require nemrutco/nova-filterable-metrics 
+composer require ristodziuba/nova-filterable-metrics 
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ Depending on your metric type, these are the available traits:
 For example, within your custom Nova value metric card:
 ```php
 // in your Nova value metric card class:
-use Nemrutco\Filterable\FilterableValue;
+use Ristodziuba\Filterable\FilterableValue;
 
 use FilterableValue;
 
@@ -85,7 +85,7 @@ public function filters(Request $request)
 In that case you don't need to use Nova's default `ranges`. Instead you can use a date filter. If you use ranges and a date filter, your date filter will be applied only within the selected Nova's range. So try to not use ranges and a date filter at same time.
 
 ## Credits
-- [Nemrut Creative Studio](https://github.com/nemrutco)
+- [Nemrut Creative Studio](https://github.com/ristodziuba)
 - [Marcel Pociot](https://github.com/mpociot)
 - [All Contributors](../../contributors)
 
