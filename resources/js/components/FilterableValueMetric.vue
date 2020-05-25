@@ -39,10 +39,10 @@ export default {
 
   methods: {
     handleChange(key) {
-      if (typeof payload !== "object") {
-        this.selectedRangeKey = payload;
+      if (typeof key !== "object") {
+        this.selectedRangeKey = key;
       } else {
-        this.selectedFilters[payload.filter.class] = payload.selected;
+        this.selectedFilters[payload.filter.class] = key.selected;
       }
     },
 
